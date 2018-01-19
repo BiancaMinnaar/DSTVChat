@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		581C394A2011E3660035D5D4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581C393D2011E1940035D5D4 /* Alamofire.framework */; };
+		581C394B2011E3660035D5D4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 581C393D2011E1940035D5D4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58C6190B1DAF62CB00F0749E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6190A1DAF62CB00F0749E /* AppDelegate.swift */; };
 		58C619101DAF62CC00F0749E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C6190E1DAF62CC00F0749E /* Main.storyboard */; };
 		58C619121DAF62CC00F0749E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C619111DAF62CC00F0749E /* Assets.xcassets */; };
@@ -17,23 +19,6 @@
 		58C619331DAF9F9700F0749E /* LoginSeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619321DAF9F9700F0749E /* LoginSeque.swift */; };
 		58C619351DAFB02400F0749E /* FriendDetailSeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619341DAFB02400F0749E /* FriendDetailSeque.swift */; };
 		58C619381DAFBDFC00F0749E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619371DAFBDFC00F0749E /* Networking.swift */; };
-		58C619761DAFC6E200F0749E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619641DAFC6E200F0749E /* AFError.swift */; };
-		58C619771DAFC6E200F0749E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619661DAFC6E200F0749E /* Alamofire.swift */; };
-		58C619781DAFC6E200F0749E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619671DAFC6E200F0749E /* DispatchQueue+Alamofire.swift */; };
-		58C619791DAFC6E200F0749E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619681DAFC6E200F0749E /* MultipartFormData.swift */; };
-		58C6197A1DAFC6E200F0749E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619691DAFC6E200F0749E /* NetworkReachabilityManager.swift */; };
-		58C6197B1DAFC6E200F0749E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6196A1DAFC6E200F0749E /* Notifications.swift */; };
-		58C6197C1DAFC6E200F0749E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6196B1DAFC6E200F0749E /* ParameterEncoding.swift */; };
-		58C6197D1DAFC6E200F0749E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6196C1DAFC6E200F0749E /* Request.swift */; };
-		58C6197E1DAFC6E200F0749E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6196D1DAFC6E200F0749E /* Response.swift */; };
-		58C6197F1DAFC6E200F0749E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6196E1DAFC6E200F0749E /* ResponseSerialization.swift */; };
-		58C619801DAFC6E200F0749E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6196F1DAFC6E200F0749E /* Result.swift */; };
-		58C619811DAFC6E200F0749E /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619701DAFC6E200F0749E /* ServerTrustPolicy.swift */; };
-		58C619821DAFC6E200F0749E /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619711DAFC6E200F0749E /* SessionDelegate.swift */; };
-		58C619831DAFC6E200F0749E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619721DAFC6E200F0749E /* SessionManager.swift */; };
-		58C619841DAFC6E200F0749E /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619731DAFC6E200F0749E /* TaskDelegate.swift */; };
-		58C619851DAFC6E200F0749E /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619741DAFC6E200F0749E /* Timeline.swift */; };
-		58C619861DAFC6E200F0749E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619751DAFC6E200F0749E /* Validation.swift */; };
 		58C619891DAFD6F300F0749E /* UserLoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C619881DAFD6F300F0749E /* UserLoginResult.swift */; };
 		58C6198B1DB010D800F0749E /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6198A1DB010D800F0749E /* FriendsTableViewController.swift */; };
 		58C6198D1DB0127900F0749E /* FriendResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6198C1DB0127900F0749E /* FriendResult.swift */; };
@@ -42,6 +27,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		581C393C2011E1940035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		581C393E2011E1940035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		581C39402011E1940035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		581C39422011E1940035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		581C39442011E1940035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		581C39462011E1940035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		581C39482011E1940035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		581C394C2011E3660035D5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		58C6191C1DAF62CC00F0749E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 58C618FF1DAF62CB00F0749E /* Project object */;
@@ -51,7 +92,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		581C394E2011E3660035D5D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				581C394B2011E3660035D5D4 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		581C39312011E1940035D5D4 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ".build/checkouts/Alamofire.git-6801331143877184500/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		58C619071DAF62CB00F0749E /* DSTV Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSTV Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C6190A1DAF62CB00F0749E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58C6190F1DAF62CC00F0749E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,24 +122,6 @@
 		58C619321DAF9F9700F0749E /* LoginSeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSeque.swift; path = "DSTV Chat/ViewControllers/CustomSegues/LoginSeque.swift"; sourceTree = SOURCE_ROOT; };
 		58C619341DAFB02400F0749E /* FriendDetailSeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendDetailSeque.swift; path = "DSTV Chat/ViewControllers/CustomSegues/FriendDetailSeque.swift"; sourceTree = SOURCE_ROOT; };
 		58C619371DAFBDFC00F0749E /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		58C619641DAFC6E200F0749E /* AFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		58C619651DAFC6E200F0749E /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
-		58C619661DAFC6E200F0749E /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		58C619671DAFC6E200F0749E /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		58C619681DAFC6E200F0749E /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		58C619691DAFC6E200F0749E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		58C6196A1DAFC6E200F0749E /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		58C6196B1DAFC6E200F0749E /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		58C6196C1DAFC6E200F0749E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		58C6196D1DAFC6E200F0749E /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		58C6196E1DAFC6E200F0749E /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		58C6196F1DAFC6E200F0749E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		58C619701DAFC6E200F0749E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		58C619711DAFC6E200F0749E /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		58C619721DAFC6E200F0749E /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		58C619731DAFC6E200F0749E /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
-		58C619741DAFC6E200F0749E /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		58C619751DAFC6E200F0749E /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		58C619881DAFD6F300F0749E /* UserLoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginResult.swift; sourceTree = "<group>"; };
 		58C6198A1DB010D800F0749E /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		58C6198C1DB0127900F0749E /* FriendResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendResult.swift; sourceTree = "<group>"; };
@@ -96,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581C394A2011E3660035D5D4 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +148,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		581C39322011E1940035D5D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				581C393D2011E1940035D5D4 /* Alamofire.framework */,
+				581C393F2011E1940035D5D4 /* Alamofire iOS Tests.xctest */,
+				581C39412011E1940035D5D4 /* Alamofire.framework */,
+				581C39432011E1940035D5D4 /* Alamofire macOS Tests.xctest */,
+				581C39452011E1940035D5D4 /* Alamofire.framework */,
+				581C39472011E1940035D5D4 /* Alamofire tvOS Tests.xctest */,
+				581C39492011E1940035D5D4 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		58C618FE1DAF62CB00F0749E = {
 			isa = PBXGroup;
 			children = (
+				581C39312011E1940035D5D4 /* Alamofire.xcodeproj */,
 				58C619091DAF62CB00F0749E /* DSTV Chat */,
 				58C6191E1DAF62CC00F0749E /* DSTV ChatTests */,
 				58C619081DAF62CB00F0749E /* Products */,
@@ -177,24 +231,6 @@
 		58C619361DAFBCB300F0749E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				58C619641DAFC6E200F0749E /* AFError.swift */,
-				58C619651DAFC6E200F0749E /* Alamofire.h */,
-				58C619661DAFC6E200F0749E /* Alamofire.swift */,
-				58C619671DAFC6E200F0749E /* DispatchQueue+Alamofire.swift */,
-				58C619681DAFC6E200F0749E /* MultipartFormData.swift */,
-				58C619691DAFC6E200F0749E /* NetworkReachabilityManager.swift */,
-				58C6196A1DAFC6E200F0749E /* Notifications.swift */,
-				58C6196B1DAFC6E200F0749E /* ParameterEncoding.swift */,
-				58C6196C1DAFC6E200F0749E /* Request.swift */,
-				58C6196D1DAFC6E200F0749E /* Response.swift */,
-				58C6196E1DAFC6E200F0749E /* ResponseSerialization.swift */,
-				58C6196F1DAFC6E200F0749E /* Result.swift */,
-				58C619701DAFC6E200F0749E /* ServerTrustPolicy.swift */,
-				58C619711DAFC6E200F0749E /* SessionDelegate.swift */,
-				58C619721DAFC6E200F0749E /* SessionManager.swift */,
-				58C619731DAFC6E200F0749E /* TaskDelegate.swift */,
-				58C619741DAFC6E200F0749E /* Timeline.swift */,
-				58C619751DAFC6E200F0749E /* Validation.swift */,
 				58C619371DAFBDFC00F0749E /* Networking.swift */,
 			);
 			path = Networking;
@@ -219,10 +255,12 @@
 				58C619031DAF62CB00F0749E /* Sources */,
 				58C619041DAF62CB00F0749E /* Frameworks */,
 				58C619051DAF62CB00F0749E /* Resources */,
+				581C394E2011E3660035D5D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				581C394D2011E3660035D5D4 /* PBXTargetDependency */,
 			);
 			name = "DSTV Chat";
 			productName = "DSTV Chat";
@@ -259,6 +297,7 @@
 				TargetAttributes = {
 					58C619061DAF62CB00F0749E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QDN3556952;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -281,6 +320,12 @@
 			mainGroup = 58C618FE1DAF62CB00F0749E;
 			productRefGroup = 58C619081DAF62CB00F0749E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 581C39322011E1940035D5D4 /* Products */;
+					ProjectRef = 581C39312011E1940035D5D4 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58C619061DAF62CB00F0749E /* DSTV Chat */,
@@ -288,6 +333,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		581C393D2011E1940035D5D4 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 581C393C2011E1940035D5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		581C393F2011E1940035D5D4 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 581C393E2011E1940035D5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		581C39412011E1940035D5D4 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 581C39402011E1940035D5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		581C39432011E1940035D5D4 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 581C39422011E1940035D5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		581C39452011E1940035D5D4 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 581C39442011E1940035D5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		581C39472011E1940035D5D4 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 581C39462011E1940035D5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		581C39492011E1940035D5D4 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 581C39482011E1940035D5D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		58C619051DAF62CB00F0749E /* Resources */ = {
@@ -314,34 +411,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C619801DAFC6E200F0749E /* Result.swift in Sources */,
-				58C6197C1DAFC6E200F0749E /* ParameterEncoding.swift in Sources */,
 				58C6198B1DB010D800F0749E /* FriendsTableViewController.swift in Sources */,
 				58C6198D1DB0127900F0749E /* FriendResult.swift in Sources */,
 				58C619331DAF9F9700F0749E /* LoginSeque.swift in Sources */,
-				58C619811DAFC6E200F0749E /* ServerTrustPolicy.swift in Sources */,
-				58C619761DAFC6E200F0749E /* AFError.swift in Sources */,
-				58C619781DAFC6E200F0749E /* DispatchQueue+Alamofire.swift in Sources */,
 				58C6192C1DAF9BAA00F0749E /* LoginViewController.swift in Sources */,
 				58C6190B1DAF62CB00F0749E /* AppDelegate.swift in Sources */,
-				58C6197B1DAFC6E200F0749E /* Notifications.swift in Sources */,
-				58C6197D1DAFC6E200F0749E /* Request.swift in Sources */,
-				58C6197E1DAFC6E200F0749E /* Response.swift in Sources */,
-				58C619851DAFC6E200F0749E /* Timeline.swift in Sources */,
-				58C619821DAFC6E200F0749E /* SessionDelegate.swift in Sources */,
 				58C619911DB0CE3400F0749E /* MainNavViewController.swift in Sources */,
-				58C6197F1DAFC6E200F0749E /* ResponseSerialization.swift in Sources */,
-				58C619791DAFC6E200F0749E /* MultipartFormData.swift in Sources */,
 				58C619301DAF9BE700F0749E /* FriendDetailViewController.swift in Sources */,
 				58C6198F1DB0B5B900F0749E /* FriendTableViewCell.swift in Sources */,
 				58C619351DAFB02400F0749E /* FriendDetailSeque.swift in Sources */,
-				58C619771DAFC6E200F0749E /* Alamofire.swift in Sources */,
-				58C6197A1DAFC6E200F0749E /* NetworkReachabilityManager.swift in Sources */,
-				58C619841DAFC6E200F0749E /* TaskDelegate.swift in Sources */,
 				58C619381DAFBDFC00F0749E /* Networking.swift in Sources */,
-				58C619861DAFC6E200F0749E /* Validation.swift in Sources */,
 				58C619891DAFD6F300F0749E /* UserLoginResult.swift in Sources */,
-				58C619831DAFC6E200F0749E /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +436,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		581C394D2011E3660035D5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 581C394C2011E3660035D5D4 /* PBXContainerItemProxy */;
+		};
 		58C6191D1DAF62CC00F0749E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 58C619061DAF62CB00F0749E /* DSTV Chat */;
@@ -491,12 +576,14 @@
 		58C619251DAF62CC00F0749E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QDN3556952;
 				INFOPLIST_FILE = "DSTV Chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bonsaiSoft.DSTV-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -504,12 +591,14 @@
 		58C619261DAF62CC00F0749E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QDN3556952;
 				INFOPLIST_FILE = "DSTV Chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bonsaiSoft.DSTV-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -523,7 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bonsaiSoft.DSTV-ChatTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSTV Chat.app/DSTV Chat";
 			};
@@ -538,7 +627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bonsaiSoft.DSTV-ChatTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSTV Chat.app/DSTV Chat";
 			};
