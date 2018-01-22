@@ -35,6 +35,7 @@ class LoginService: LoginServiceProtocol
         if errorMessage != nil{
             throw ErrorModel.NetworkError(errorMesasage: errorMessage!)
         }
+        
         return userData
     }
 }

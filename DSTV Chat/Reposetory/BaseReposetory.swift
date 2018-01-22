@@ -11,9 +11,12 @@ import Foundation
 class BaseRepository
 {
     var _MasterReposetory: MasterRepositoryProtocol
+    var HasError: Bool
+    var ErrorMessage: String?
     
     init(masterReposetory:MasterRepositoryProtocol)
     {
-        self._MasterReposetory = masterReposetory
+        _MasterReposetory = masterReposetory
+        HasError = false;
     }
 }

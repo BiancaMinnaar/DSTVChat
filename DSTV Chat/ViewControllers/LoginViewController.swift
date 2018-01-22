@@ -30,7 +30,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
     @IBAction func performLogin(_ sender: AnyObject) {
         testLogin(with: userNameTestField.text, password: passwordTextField.text)
     }
@@ -42,5 +41,4 @@ class LoginViewController: UIViewController {
             tableVC.logedInUser = logedInUser
         }
     }
-
 }
