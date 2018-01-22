@@ -15,19 +15,26 @@ class LoginViewController: UIViewController {
     var loginSuccess = false;
     
     func testLogin(with userName: String?, password:String?) {
+        let repo = LoginRepository(masterRepository: MasterRepository(), loginService: LoginService())
         
-        Networking.LoginUser(withUserName: userName, password: password) { (loginResult) in
-            self.logedInUser = loginResult
+        repo.Login(username: userName!, password: password!, completion: { (loginResult) in
             if loginResult.Result! {
+                self.logedInUser = loginResult
                 self.performSegue(withIdentifier: "idLoginSeque", sender: nil)
-            } else {
+            }else {
                 let alertController = UIAlertController(title: "DSTV Login Error", message:
                     "Your login credentials were incorrect!!", preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
                 
                 self.present(alertController, animated: true, completion: nil)
             }
-        }
+        }, failure: {(errorMessage) in
+                let alertController = UIAlertController(title: "General network Error", message:
+                    errorMessage, preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+            
+                self.present(alertController, animated: true, completion: nil)
+            })
     }
     
     @IBAction func performLogin(_ sender: AnyObject) {

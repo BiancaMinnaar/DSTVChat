@@ -10,5 +10,5 @@ import Foundation
 
 protocol LoginServiceProtocol
 {
-    func Login(username:String, password:String) throws -> UserLoginResult?
+    func Login(username:String, password:String, completion: @escaping (UserLoginResult) -> Void, failure: @escaping (String) -> Void)
 }

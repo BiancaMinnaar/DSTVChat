@@ -10,5 +10,5 @@ import Foundation
 
 protocol LoginRepositoryProtocol
 {
-    func Login(username: String, password: String, completion: @escaping (UserLoginResult?) -> Void)
+    func Login(username: String, password: String, completion: @escaping (UserLoginResult) -> Void, failure: @escaping (String) ->Void)
 }
