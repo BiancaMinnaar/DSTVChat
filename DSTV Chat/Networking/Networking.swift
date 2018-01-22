@@ -13,8 +13,9 @@ class Networking: NSObject {
     
     class func LoginUser(withUserName:String?, password: String?, completion: @escaping (UserLoginResult) -> Void) -> Void {
         let parameters: Parameters = ["username": withUserName!, "password": password!]
+        let networkURL = Constants.NETWORKURL + "login";
         
-        request("http://mobileexam.dstv.com/login", method:.post, parameters: parameters, encoding: JSONEncoding.default)
+        request(networkURL, method:.post, parameters: parameters, encoding: JSONEncoding.default)
         .responseJSON { (response) in
             guard response.result.isSuccess else {
                 print("Error while loging in: \(String(describing: response.result.error))")

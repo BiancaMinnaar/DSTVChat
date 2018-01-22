@@ -14,6 +14,8 @@
 		5812428820150F5600C6707E /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812428720150F5600C6707E /* LoginRepositoryProtocol.swift */; };
 		5812428B2015170B00C6707E /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812428A2015170B00C6707E /* LoginServiceProtocol.swift */; };
 		5812428F2015D75600C6707E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812428E2015D75600C6707E /* LoginService.swift */; };
+		581242912015DA1700C6707E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581242902015DA1700C6707E /* Constants.swift */; };
+		581242932015DE5B00C6707E /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581242922015DE5B00C6707E /* ErrorModel.swift */; };
 		581C394A2011E3660035D5D4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581C393D2011E1940035D5D4 /* Alamofire.framework */; };
 		581C394B2011E3660035D5D4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 581C393D2011E1940035D5D4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58C6190B1DAF62CB00F0749E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6190A1DAF62CB00F0749E /* AppDelegate.swift */; };
@@ -121,6 +123,8 @@
 		5812428720150F5600C6707E /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		5812428A2015170B00C6707E /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
 		5812428E2015D75600C6707E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		581242902015DA1700C6707E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		581242922015DE5B00C6707E /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		581C39312011E1940035D5D4 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ".build/checkouts/Alamofire.git-6801331143877184500/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		58C619071DAF62CB00F0749E /* DSTV Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSTV Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C6190A1DAF62CB00F0749E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +233,7 @@
 				58C619111DAF62CC00F0749E /* Assets.xcassets */,
 				58C619131DAF62CC00F0749E /* LaunchScreen.storyboard */,
 				58C619161DAF62CC00F0749E /* Info.plist */,
+				581242902015DA1700C6707E /* Constants.swift */,
 			);
 			path = "DSTV Chat";
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			children = (
 				58C619881DAFD6F300F0749E /* UserLoginResult.swift */,
 				58C6198C1DB0127900F0749E /* FriendResult.swift */,
+				581242922015DE5B00C6707E /* ErrorModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58C6198B1DB010D800F0749E /* FriendsTableViewController.swift in Sources */,
+				581242912015DA1700C6707E /* Constants.swift in Sources */,
 				58C6198D1DB0127900F0749E /* FriendResult.swift in Sources */,
 				58C619331DAF9F9700F0749E /* LoginSeque.swift in Sources */,
 				5812428820150F5600C6707E /* LoginRepositoryProtocol.swift in Sources */,
@@ -457,6 +464,7 @@
 				58C6192C1DAF9BAA00F0749E /* LoginViewController.swift in Sources */,
 				5812428620150F3C00C6707E /* LoginRepository.swift in Sources */,
 				58C6190B1DAF62CB00F0749E /* AppDelegate.swift in Sources */,
+				581242932015DE5B00C6707E /* ErrorModel.swift in Sources */,
 				58124280201507EA00C6707E /* MasterRepository.swift in Sources */,
 				58C619911DB0CE3400F0749E /* MainNavViewController.swift in Sources */,
 				58C619301DAF9BE700F0749E /* FriendDetailViewController.swift in Sources */,
