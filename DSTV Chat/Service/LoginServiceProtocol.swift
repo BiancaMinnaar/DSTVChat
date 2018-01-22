@@ -10,5 +10,5 @@ import Foundation
 
 protocol LoginServiceProtocol
 {
-    func Login(username:String, password:String) -> UserLoginResult?
+    func Login(username:String, password:String) throws -> UserLoginResult?
 }

@@ -11,26 +11,29 @@ import Alamofire
 
 class LoginService: LoginServiceProtocol
 {
-    func Login(username: String, password: String) -> UserLoginResult? {
+    func Login(username: String, password: String) throws -> UserLoginResult? {
         let parameters: Parameters = ["username": username, "password": password]
         let networkURL = Constants.NETWORKURL + "login";
         var userData:UserLoginResult?
+        var errorMessage:String?
         
         request(networkURL, method:.post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { (response) in
                 guard response.result.isSuccess else {
-                    //Loggin service
-                    print("Error while loging in: \(String(describing: response.result.error))")
+                    errorMessage = "Error while loging in: \(String(describing: response.result.error))"
                     return
                 }
                 
                 guard let userJSON = response.result.value as? [String: AnyObject] else{
-                    print("Malformed data received from Login service")
+                    errorMessage = "Malformed data received from Login service"
                     
                     return
                 }
                 
                 userData = UserLoginResult(withJSONData: userJSON as AnyObject )
+        }
+        if errorMessage != nil{
+            throw ErrorModel.NetworkError(errorMesasage: errorMessage!)
         }
         return userData
     }

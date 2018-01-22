@@ -8,11 +8,9 @@
 
 import Foundation
 
-class ErrorModel
+enum ErrorModel: Error
 {
-    var ErrorMessage: String
-    
-    init(errorMessage:String) {
-        ErrorMessage = errorMessage
-    }
+    case NetworkError(errorMesasage:String)
+    case LogicError
+    case InputError(userErrorMessage:String)
 }
