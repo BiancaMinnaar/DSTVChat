@@ -10,5 +10,5 @@ import Foundation
 
 protocol LoginRepositoryProtocol
 {
-    func Login(username: String, password: String)
+    func Login(username: String, password: String) -> UserLoginResult?
 }

@@ -13,6 +13,7 @@
 		5812428620150F3C00C6707E /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812428520150F3C00C6707E /* LoginRepository.swift */; };
 		5812428820150F5600C6707E /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812428720150F5600C6707E /* LoginRepositoryProtocol.swift */; };
 		5812428B2015170B00C6707E /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812428A2015170B00C6707E /* LoginServiceProtocol.swift */; };
+		5812428F2015D75600C6707E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812428E2015D75600C6707E /* LoginService.swift */; };
 		581C394A2011E3660035D5D4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581C393D2011E1940035D5D4 /* Alamofire.framework */; };
 		581C394B2011E3660035D5D4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 581C393D2011E1940035D5D4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58C6190B1DAF62CB00F0749E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6190A1DAF62CB00F0749E /* AppDelegate.swift */; };
@@ -119,6 +120,7 @@
 		5812428520150F3C00C6707E /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		5812428720150F5600C6707E /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		5812428A2015170B00C6707E /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
+		5812428E2015D75600C6707E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		581C39312011E1940035D5D4 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ".build/checkouts/Alamofire.git-6801331143877184500/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		58C619071DAF62CB00F0749E /* DSTV Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSTV Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C6190A1DAF62CB00F0749E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				5812428A2015170B00C6707E /* LoginServiceProtocol.swift */,
+				5812428E2015D75600C6707E /* LoginService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				58C619911DB0CE3400F0749E /* MainNavViewController.swift in Sources */,
 				58C619301DAF9BE700F0749E /* FriendDetailViewController.swift in Sources */,
 				58C6198F1DB0B5B900F0749E /* FriendTableViewCell.swift in Sources */,
+				5812428F2015D75600C6707E /* LoginService.swift in Sources */,
 				581242842015091300C6707E /* BaseReposetory.swift in Sources */,
 				58C619351DAFB02400F0749E /* FriendDetailSeque.swift in Sources */,
 				58C619381DAFBDFC00F0749E /* Networking.swift in Sources */,

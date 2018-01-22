@@ -10,8 +10,8 @@ import Foundation
 
 class LoginRepository : BaseRepository, LoginRepositoryProtocol
 {
-    func Login(username: String, password: String) {
-        
+    func Login(username: String, password: String) -> UserLoginResult? {
+        return nil
     }
     
     var _Service: LoginServiceProtocol
